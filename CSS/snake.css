@@ -3,7 +3,7 @@ body, header, h1, section, article, div, ul, li, h2, h3 {
   padding: 0;
   border: 0;
   outline: 0;
-  font:inherit;
+  font: inherit;
   text-align: inherit;
   text-decoration: inherit;
   color: inherit;
@@ -23,7 +23,7 @@ ul {
 
 body{
   text-align: center;
-  font: sans-serif;
+  font-family: sans-serif;
 }
 
 h1{
@@ -65,14 +65,14 @@ h2 {
 
 .score {
   position: absolute;
-  font-size: 24px;
+  font-size: 20px;
   top: -30px;
 }
 
 .points {
   position: absolute;
   top: 0;
-  right: -30px;
+  right: -55px;
 }
 
 .grid {
@@ -101,8 +101,21 @@ h2 {
 
 .snake {
   background: green;
+  border-radius: 30%
+}
+
+.apple:before {
+  position: absolute;
+  font-size: 10px;
+  top: -6px;
+  left: 6px;
+  content: "P";
+  color: green;
 }
 
 .apple {
+  position: relative;
+  z-index: -1;
   background: red;
+  border-radius: 35% 35% 50% 50%;
 }

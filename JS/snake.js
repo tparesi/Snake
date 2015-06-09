@@ -44,9 +44,9 @@
    if (this.board.grid[head.x][head.y] === "A") {
      this.board.apple = "S";
      this.board.generateApple();
-     this.score += 1;
+     this.score += 100;
 
-     if (this.score % 5 === 0) {
+     if (this.score % 500 === 0) {
        this.view.changeSpeed();
      }
      return true;
